@@ -26,7 +26,7 @@ class _payState extends State<pay> {
                 Column(
                   children: [
                     const SizedBox(
-                      height: 40,
+                      height: 20,
                     ),
                     // ignore: prefer_const_constructors
                     textwidget(
@@ -57,7 +57,7 @@ class _payState extends State<pay> {
                     ),
                     textfieldwidget(),
                     const SizedBox(
-                      height: 5,
+                      height: 20,
                     ),
                     Row(
                       children: [
@@ -77,7 +77,7 @@ class _payState extends State<pay> {
                     ),
                     textfieldwidget(),
                     const SizedBox(
-                      height: 5,
+                      height: 20,
                     ),
                     Row(
                       children: [
@@ -97,7 +97,7 @@ class _payState extends State<pay> {
                     ),
                     textfieldwidget(),
                     const SizedBox(
-                      height: 5,
+                      height: 20,
                     ),
                     buttonwidget("Pay Donation", green2, Colors.white),
                     const SizedBox(

@@ -14,6 +14,7 @@ class _family_membersState extends State<family_members> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           textwidget("Family Members", 15, Colors.black, FontWeight.w500),
@@ -23,7 +24,7 @@ class _family_membersState extends State<family_members> {
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: SizedBox(
-              height: 570,
+              height: 638,
               child: ListView.builder(
                 scrollDirection: Axis.vertical,
                 itemCount: 8,

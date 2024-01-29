@@ -16,79 +16,80 @@ class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.white,
         body: Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: SizedBox(
-            height: 40,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: 8,
-              itemBuilder: (context, index) {
-                return Row(
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            PageTransition(
-                                type: PageTransitionType.fade,
-                                child: const family_members()));
-                      },
-                      child: tabtile(
-                        "Family Funds",
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 5,
-                    )
-                  ],
-                );
-              },
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: SizedBox(
+                height: 40,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 8,
+                  itemBuilder: (context, index) {
+                    return Row(
+                      children: [
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                PageTransition(
+                                    type: PageTransitionType.fade,
+                                    child: const family_members()));
+                          },
+                          child: tabtile(
+                            "Family Funds",
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        )
+                      ],
+                    );
+                  },
+                ),
+              ),
             ),
-          ),
-        ),
-        Container(
-          height: 220,
-          width: 350,
-          decoration: BoxDecoration(
-            color: Colors.black12,
-            borderRadius: BorderRadius.circular(10),
-          ),
-          // child: ClipRRect(
-          //   borderRadius: BorderRadius.circular(10),
-          //   child: Image.network("", fit: BoxFit.cover),
-          // ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: SizedBox(
-            height: 300,
-            child: ListView.builder(
-              scrollDirection: Axis.vertical,
-              itemCount: 8,
-              itemBuilder: (context, index) {
-                return Column(
-                  children: [
-                    event_tile(
-                      "Annual Meeting | To the AI-Yahya Family | AI-Qassim - 1445 AH",
-                      "Shah rukh Khan",
-                      "01-02-2024",
-                      "5 AM",
-                      "",
-                    ),
-                    const Divider(
-                      color: Colors.black,
-                    )
-                  ],
-                );
-              },
+            Container(
+              height: 196,
+              width: 350,
+              decoration: BoxDecoration(
+                color: Colors.black12,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              // child: ClipRRect(
+              //   borderRadius: BorderRadius.circular(10),
+              //   child: Image.network("", fit: BoxFit.cover),
+              // ),
             ),
-          ),
-        ),
-      ],
-    ));
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: SizedBox(
+                height: 400,
+                child: ListView.builder(
+                  scrollDirection: Axis.vertical,
+                  itemCount: 8,
+                  itemBuilder: (context, index) {
+                    return Column(
+                      children: [
+                        event_tile(
+                          "Annual Meeting | To the AI-Yahya Family | AI-Qassim - 1445 AH",
+                          "Shah rukh Khan",
+                          "01-02-2024",
+                          "5 AM",
+                          "",
+                        ),
+                        const Divider(
+                          color: Colors.black,
+                        )
+                      ],
+                    );
+                  },
+                ),
+              ),
+            ),
+          ],
+        ));
   }
 }
 

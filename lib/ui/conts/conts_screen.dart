@@ -103,6 +103,7 @@ class _cont_screenState extends State<cont_screen> {
           children: pages,
         ),
         bottomNavigationBar: BottomNavigationBar(
+            backgroundColor: Colors.white,
             items: <BottomNavigationBarItem>[
               const BottomNavigationBarItem(
                 icon: Icon(
